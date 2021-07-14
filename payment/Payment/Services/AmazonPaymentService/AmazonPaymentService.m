@@ -14,7 +14,7 @@
         NSLog(@"Sorry, this payment cannot use now.");
         return;
     }
-    NSLog(@"Amazon processed amount$%d", num);
+    NSLog(@"Amazon processed amount $%d", num);
     return;
 }
 

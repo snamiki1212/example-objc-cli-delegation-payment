@@ -14,7 +14,7 @@
         NSLog(@"Sorry, this payment cannot use now.");
         return;
     }
-    NSLog(@"Paypal processed amount$%d", num);
+    NSLog(@"Paypal processed amount $%d", num);
     return;
 }
 
