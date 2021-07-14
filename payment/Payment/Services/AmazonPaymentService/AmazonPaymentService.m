@@ -8,5 +8,9 @@
 #import "AmazonPaymentService.h"
 
 @implementation AmazonPaymentService
-
+- (void)processPaymentAmount:(NSInteger *)num
+{
+    NSLog(@"This is Amazon payment");
+    return;
+}
 @end

@@ -8,5 +8,9 @@
 #import "StripePaymentService.h"
 
 @implementation StripePaymentService
-
+- (void)processPaymentAmount:(NSInteger *)num
+{
+    NSLog(@"This is Stripe payment");
+    return;
+}
 @end
