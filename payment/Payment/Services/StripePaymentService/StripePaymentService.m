@@ -10,7 +10,16 @@
 @implementation StripePaymentService
 - (void)processPaymentAmount:(NSInteger *)num
 {
-    NSLog(@"This is Stripe payment");
+    if(![self canProcessPayment]) {
+        NSLog(@"Sorry, this payment cannot use now.");
+        return;
+    }
+    NSLog(@"Stripe processed amount$%d", num);
     return;
 }
+
+- (BOOL)canProcessPayment {
+    return arc4random_uniform(2) == 1;
+}
+
 @end
